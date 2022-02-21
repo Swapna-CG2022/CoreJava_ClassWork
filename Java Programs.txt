@@ -1,0 +1,26 @@
+Imagine you are writing a program that stores a student's year (Freshman, Sophomore, Junior, or Senior), the number of courses the student is taking, and his or her GPA on a 4.0 scale. Declare variables with the appropriate names and types to hold this information. Write a complete variable declaration statement with the type, the variable name, and a semicolon.
+
+Write a Java program called DollarFigure that produces the following output. Use nested for loops to capture the structure of the figure.
+
+$$$$$$$**************$$$$$$$
+**$$$$$$************$$$$$$**
+****$$$$$**********$$$$$****
+******$$$$********$$$$******
+********$$$******$$$********
+**********$$****$$**********
+************$**$************
+
+Modify your StarFigure code from the previous problem to use a constant for the size. The outputs below use a constant size of 3 (left) and 6 (right):
+
+size 3	
+////////\\\\\\\\
+////********\\\\
+****************
+
+size 6
+////////////////////\\\\\\\\\\\\\\\\\\\\
+////////////////********\\\\\\\\\\\\\\\\
+////////////****************\\\\\\\\\\\\
+////////************************\\\\\\\\
+////********************************\\\\
+****************************************
