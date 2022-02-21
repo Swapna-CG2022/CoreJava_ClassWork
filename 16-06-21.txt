@@ -1,0 +1,64 @@
+ORM
+====
+Object Relational Mapping
+
+Java is purely based on Objects
+DB is Purely based on Relations/tables
+
+JDBC (mismatches between Object Model and Relational Model) 
+
+ORM fills the gap between Object Model and Relational Model
+
+Object Oriented model uses classes
+Relational Model uses tables
+
+we need a technique to establish connection between objects and relational table
+
+Granularity
+========
+  => Person 
+           Address
+Person
+Address
+
+Inheritance
+========
+DBMS does not define any such standards for inheritance
+
+Identity
+=====
+select * from person where personid = 123;
+
+(person.personid).equals(person1.personid)
+
+Association
+========
+Object Oriented Languages associations like (one to one,one to many etc.,)
+represented as unidirectional
+RDMS associations should be bidirectional
+
+Data navigation
+===========
+In Java you can navigate from one association to another and can fetch the data
+this is not efficient while retrieving data from the relational db.
+(multiple tables has to be joined if we want to implement above method)
+
+The solution for all above problems is ORM tool.
+
+Advantages of ORM tools:
+==================
+
+1. Better System Architecture
+2. Reduce Coding Time
+3. Caching and Tranasaction Management
+
+Hibernate is Open Source ORM tool which is implements specification of JPA (Java Persistence API) for data persistence.
+
+
+
+
+
+
+
+
+JPA

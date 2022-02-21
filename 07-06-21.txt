@@ -1,0 +1,50 @@
+Concurrency Introduction
+========================
+
+concurrency is the ability to run several programs or parts of program in parallel.
+concurreny enables high performance
+
+the backbone of concurreny are threads
+
+A thread is alight weight process which has its own call stack.
+
+call stack is information about the different parts of execution by that thread.
+
+java.util.concurrent is the package added in java 1.5
+
+java.util.concurrent.Executor is used to run the runnable objects with out creating new threads every time and mostly reusing the same thread again.
+
+why Executor framework?
+creating a thread is an expensive process which includes memory overhead also.so its a best idea to reuse these threads once created, to run further runnables.
+
+public interface Future<V>
+==========================
+A Future represents the result of an asynchronous computation. Methods are provided to check if the computation is complete, to wait for its completion, and to retrieve the result of the computation. The result can only be retrieved using method get when the computation has completed, blocking if necessary until it is ready. Cancellation is performed by the cancel method. Additional methods are provided to determine if the task completed normally or was cancelled. Once a computation has completed, the computation cannot be cancelled. If you would like to use a Future for the sake of cancellability but not provide a usable result, you can declare types of the form Future<?> and return null as a result of the underlying task.
+
+public interface ExecutorService
+extends Executor
+===================================
+An Executor that provides methods to manage termination and methods that can produce a Future for tracking progress of one or more asynchronous tasks.
+
+volatile keyword in java
+========================
+is used to modify the value of a variable by different threads.
+means that variable or method can be accessed by multiple threads.
+
+I/O and NIO (self study)
+========================
+
+java.io => storing the data and retrieving the data from files or buffers(temporary storage) or etc.,
+
+
+
+
+
+
+
+Jenkins
+
+
+Oracle (oraclexe)
+
+Lab Programs

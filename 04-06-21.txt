@@ -1,0 +1,72 @@
+anonymous class
+================
+ a class with out name is called as anonymous class
+Anonymous class can be created using two ways:
+
+1. using abstract or concrete class
+2. using interface
+
+
+Java 8 new features
+===================
+
+-From Java 8 we can add default and static methods to the interface,
+ these are implemented methods in the interface.
+
+- public static void main(String...args) 
+
+- for each method in java 8
+studentNameInitials.forEach(str -> {System.out.print("       "+str);});
+
+-Method reference in java 8
+System.out::println
+
+Option class in Java 8
+======================
+it is used to solve the null pointer exception by return non null value.
+Helper calss to check the presence of value for particular variable
+
+
+Date/Time API in Java 8
+=======================
+
+LocalDate  => no time or timezone
+LocalTime   => no date or timezone
+LocalDateTime => date and time with out timezone
+
+OffSetDate
+offSetTime
+offSetDateTime => + 5.30
+ZoneId => chennai,kolkata 
+
+
+Functional Interface=(SAM = Single Abstract Method interface)
+=============================================================
+An interface which contains only and only one abstract method then it is termed as functional interface.
+
+@FunctionalInterface is used to specify on top of an interface to define it as functional interface
+
+Runnable interface of java.lang package is functional interface it contains only one abstract method
+run().
+
+Upto Java 7 these Single Abstract Methods are implemented using anonymous classes.
+
+From Java 8 we are implementing above SAM using Lambda Expressions.
+
+Lambda Expressions practice
+===========================
+functional interface called multiplication 
+with an abstract method mul()
+and implement it using lambda expression
+
+java.util.function => this package have set of predefined functional interfaces
+
+Predicate
+Consumer etc.,
+
+
+Runnable interface using Lambda expression
+=========================================
+Stream API for Map collection
+
+Java IO

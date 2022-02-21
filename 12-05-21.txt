@@ -1,0 +1,160 @@
+different types of packages
+pacakge is to group similar type of classes and subclasses and subpackages
+
+Two different types of packages in Java
+1.user defined package
+2.pre defined package
+
+Scanner (java.util) 
+java.io (input and output operations)
+java.lang (default package which is imported by Java Compiler)
+java.util.Math (Mathmatecial operations)
+java.sql(java program to connect with DB)
+
+Naming Conventions In Java:
+==========================
+Coding Standards
+================
+=>Class name should start with capital letters and followed by small letters
+	Ex:SumOfTwoNumber
+=> package name should be in lower case(small letters)
+	Ex: arithmeticoperation
+=> Method name 
+      should be in camel case
+	Ex:- multiplicationOfTwoNumbers()
+=> variables also follows the camel case
+	Ex: areaOfTriangle;
+=> constants should be in all CapitalLetters
+        Ex: PI
+=> Interface name should start with capital letters and followed by small letters
+	Ex:EmployeeData
+
+Uses of naming conventions:
+===========================
+improves the readability for reusing of the code.
+Easy debugging
+
+identifier :
+============
+identifiers are names given to variable,class,package,interface,method etc.,
+Example:
+=======
+ age
+Rules for writing the Identifiers:
+=================================
+there is no special characters except $ and _ in the identifer
+Example:
+=======
+area_Square
+$areaOfSquare
+area Square(not valid)
+area-Square(not valid)
+_areaSquare(valid)
+$areaSquare(valid)
+
+identifiers never starts with digit.
+Example:
+=======
+1area_Square(not valid)
+a4(valid)
+
+primitive data type
+==================
+Datatypes    memory storage      Default values
+===========   ============        =============
+byte   8 bits = 1 byte  0 to 255   = 0
+short  16 bits = 2 bytes 0 to 32767 = 0
+int    32 bits  = 4 bytes            = 0
+long   64 bits  = 8 bytes            = 0
+float  32 bits  = 4 bytes            =0.0f
+double 64 bits  = 8 bytes            = 0.0
+char   16 bits  = 2 bytes            =''
+boolean => true or false => 1 bit    =false
+
+literals
+=======
+Integer literal
+=============== 
+Example:
+=======
+12345,-6789
+float literal
+============
+Example:
+=======
+123.45f,-67.89f
+double literal
+==============
+Example:
+=======
+12345.6767657,-6789.789676
+char literal
+============
+Example:
+=======
+'A','a'
+boolean literal
+================
+true or false
+
+variables
+========
+identifiers declared to store data in the program
+Ex:
+==
+boolean gender; //false //variable declaration
+boolean gender = true; //true //variable initialization
+float areaOfTriangle = 3.567f;
+
+Operators in Java
+=================
+Arithmetic operators
+==========
++,-,/,*,%
+unary operators
+==============
+++,-- 
+comparision/relational operators
+======================
+<,>,<=,>=,!=,==,instance of
+logical operators
+======================
+&&,||,!
+bitwise operators
+======================
+&,|,~,>>,>>>,<<
+Assignment operators
+======================
++=,-=,/=,*=,=,&=,|=,<<=,>>=,>>>=
+
+Ternary Operators
+================
+?:
+
+control statements
+==================
+if-else
+for
+switch
+while
+do-while
+break
+continue
+
+Arrays
+======
+
+Arrays are non-primitive data type.
+Arrays are used to store group of data of same data type.
+ex: int[] numbers = new int[20];
+Arrays are used to store group of data of same type under a single identifier.
+
+
+
+
+
+
+
+
+
+

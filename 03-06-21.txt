@@ -1,0 +1,187 @@
+Multithreading in java
+======================
+
+we can create thread in two ways:
+
+1.Using Thread Class
+====================
+	- Runnable interface is implemented by Thread class
+	- run() method in thread class will be overriden in the user defined thread class
+	- run() method should be called using start() method
+		(start() method internally calls run() method)
+	- start() method of thread class is used to start a newly created thread.
+		-> it will instantiate/start the thread
+                -> thread state will change from new state to runnable state
+		-> it calls run() method to execute the task.
+
+
+2.Using Runnable Interface
+
+above interface and Thread class is defined in java.lang package
+
+Most Applications uses multi-threading extensively
+
+1. faster processing of background tasks
+2. to take advantage of modern processors
+3. For reducing response times
+4. to serve multiple users at the same time
+
+Can we call run() method explicitly with out using start() method?
+yes,here run() method is treated as normal method instead of thread method.
+
+when a run() method is called using start() method following steps are done
+
+1. each thread creates a separate call stack when it starts
+2. Invoking run() method will be from main thread.
+
+join() method
+==============
+join() method waits for a thread to die.
+it stops all other threads untill the thread with join method completes task and die.
+
+currentThread() method
+======================
+Returns a reference to the currently executing thread object.
+
+getName() 
+========
+to read the name of the thread
+
+setName() 
+========
+to set the name of the thread
+
+getID()
+=======
+to read the ID of the thread
+
+Thread Priority
+===============
+Each thread have a priority
+range from 1 and 10
+Most cases Thread schedular schedules the thread according to priority of the thread
+when Thread schedular schedules the thread according to priority of the thread it is called as 
+preemptive scheduling
+
+But ultimate decision depends on JVM specification
+
+3 Constants are defined in the thread class for priority:
+
+MIN_PRIORITY
+MAX_PRIORITY
+NORM_PRIORITY
+
+
+Default priority of a thread is 5.
+MIN_PRIORITY of thread is 1.
+MAX_PRIORITY of thread is 10.
+
+
+After all child threads are dead then only main thread will go to dead state.
+
+
+Daemon Thread => it is a service thread that provides service for all the threads created by user or JVM.
+This thread runs in background.
+
+Example of DaemonThread:
+=======================
+gc = Garbage Collector
+finalizer etc.,
+
+Daemon Thread will have low priority
+
+Daemon Thread depeneds on the user threads and stops when all user threads finish their execution
+
+setDaemon() method is used to make or mark or set a thread as daemon thread.
+
+how to check a thread is Daemon thread or not?
+isDaemon() is a method to check whether a thread is daemon thread.
+
+gc = Garbage Collector => 
+a program in execution /a thread which runs in background for Memory Management
+======================
+Memory Management In Java is done by using GC
+
+it collects all objects which are not in use and frees the memory.
+
+JVM executes GC on every program when objects are created in heap memory
+GC finds the objects will no longer needed and deletes them to free up memory.
+
+who will invoke GC?
+==================
+it is an automatic process ,JVM is responsible for invoking the GC.
+
+can a programmer invoke the GC?
+==============================
+yes,but it will not act according to the programmer instructions it only follows JVM instructions.
+
+How to make an object eligible for garbage collections?
+========================================================
+using following you can hint garbage collector that it is eligible for deleting
+===============================================================================
+1. by assigning a  null value to the object
+
+Example :
+========
+A a = new A();
+a = null;//null object
+
+2. By assigning a reference to another
+
+Example :
+========
+A a = new A();
+B b = a;
+a object is eligible for gc
+
+3. by using anonymous object 
+
+Example :
+========
+new A(); //object with out name
+
+4. executing a finalize method on an object
+
+Example :
+========
+A a = new A();
+
+a.finalize();
+
+then this method hints gc that this object is eligible for delete
+
+Rule for deleting an Object using GC:
+====================================
+finalize() method will be called on object before object is collected for garbage.
+JVM executes finalize() method to make an object eligible for delete.
+
+
+Inter Thread Communication
+==========================
+to establish communication between two threads
+
+wait()
+notify()
+notifyAll()
+
+Thread Synchronization
+======================
+
+1. To prevent thread interference
+2. to prevent consistency problems
+
+when data or resouce is shared among different threads and leading to unexpected results
+
+
+synchronization
+================
+is implemented using a keyword "synchronized"
+
+synchronized method
+synchronized block
+
+it will not allow parallel/concurrent transactions
+
+
+
+

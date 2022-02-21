@@ -1,0 +1,46 @@
+String in Java
+==============
+
+String is a predefined class in java from java.lang package
+
+what is the default package imported by Java Compiler?
+ans: java.lang
+
+what is the super class(parent class) for all classes in java
+?
+ans : Object class
+Object is defined in java.lang
+
+String is a class used to store group of characters
+Strings in java are constants means the value of strings cannot be changed
+so, String objects are immutable(which doesnot allow to change the content inside it).
+
+how to declare a string??
+========================
+1) String s = "this is a string"; //this creates an reference variable //stores in the stack ds
+2) String str = new String();//this creates an empty string object //this is stored heap memory
+3) char[] name = {'r','a','m','a'};
+   String nameObj = new String(name);
+
+class = Data members + methods 
+
+string methods are extraction methods not modification of the strings
+
+Object = Instance of class = copy of the class
+
+Type of Methods
+===============
+Instance Methods => Methods which are accessed using the object name we call them as Instance Methods
+Static Methods
+Factory Methods
+
+
+Method have 3 parts
+
+1. Method signature
+2. Method body
+3. return type
+
+
+
+

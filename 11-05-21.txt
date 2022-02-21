@@ -1,0 +1,106 @@
+//package declaration
+//import statements
+//class declaration starts
+//main method
+//declare variables
+
+
+Eclipse IDE (Integrated Development Environment)
+
+= Notepad for writing the code +
+= console as Command prompt
+= Execution environment(Javac Compiler) 
+
+Java have
+
+4500+ predefined classes are available
+
+String
+Scanner
+Math
+etc.,
+
+>368 packages are availabe in java
+
+package in java is used to store relevant and connected code(classes) at one place
+
+namespace used to store similar type of code/classes(BU what is package?)
+
+Mathematical Operations
+==================
+sqr()
+sqrt()
+round()
+random()
+pow()
+cube()
+sin()
+cos()
+tan()
+etc.,
+
+java.lang.Math (package name/folder name)
+
+
+
+
+api = application program interface => packages + classes + methods etc.,
+Java api => java packages + classes + methods
+
+
+History of Java?
+What is story behind Java development?
+who are behind of it?
+What is the purpose of OOPS Concepts in General Terms?
+
+James Gosling has initiated the project 1991
+
+1995 java 1.0
+
+Green Team
+
+James Gosling
+Mike sheriden
+EdFrank
+Chris Warth
+patrick Naughton
+
+
+C - Dennies Richie
+C++ - Bjarne Stroustrup
+
+embedded systems
+sun microsystems
+oracle acquired sun microsystems in 2010
+
+more than 3000 billion devices
+
+Internet
+Dynamic programming
+
+javap is the tool to disassemble the .class file
+
+javap -c <.class filename> is the command used to see bytecode in classfile.
+
+javap -s <.class filename> is used to see internal method signatures
+
+javap -l <.class filename> is used to display line numbers
+
+
+javac <filename>.java - compiling the code
+javap <.class filename> -disassemble the compiled code
+java <.class filename> - to execute bytecode
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+JDBC Introduction
+=================
+Java DataBase Connectivity
+
+establish a connection to db using java
+
+create a table
+update a value in the table
+delete a row in the table
+read all values in the table
+read only  one value in the table
+
+
+java.sql package contains interfaces which helps us to connect with db
+it is not specific to the database
+
+
+db vendors
+==========
+
+Oracle
+MySQL
+Postgre
+H2
+HSQL
+MongoDB 
+Cassandra
+etc.,
+
+specific dependency should be added to maven related to that db
+
+Oracle -> ojdbc6.jar (Java Archive) = group of .class files
+Mysql -> Mysql-connector.jar
+h2 -> h2.jar
+postgre -> postgre.jar
+etc.,
+
+
+Steps to  connect java program to db
+====================================
+step1:
+=====
+Load the Driver
+step2:
+=====
+Establish the connection
+step3:
+=====
+create statement
+step4:
+=====
+execute statement
+step 5:
+======
+Read the result set
+
+
+
+
+PreparedStatement 
+
+
+
+SOLID principles LISKOV 
+
+Software Design and Architecture
+Design Patterns
+
+Project
+
+Spring 
+Spring Boot
+and JPA
+and Hibernate

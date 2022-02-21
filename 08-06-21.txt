@@ -1,0 +1,48 @@
+Database = collection of information
+to manipulate the large data sets we need a software = DataBase Management System(DBMS)
+
+RDBMS = Relational DataBase Management System
+
+Relation = Table = rows * columns
+
+SQL (Structured Query Language)
+===============================
+DDL = Data Definition Language 
+==============================
+Create
+drop
+alter
+truncate
+
+DML =  Data Manipulation Language
+==================================
+Select
+Update
+Delete
+Insert
+
+DCL = Data Control Language
+===========================
+GRANT
+Revoke
+
+TCL = Transaction Control Language
+==================================
+commit
+rollback
+savepoint
+
+Constraints in SQL
+===================
+PrimaryKey
+ForeignKey
+
+Joins
+=====
+
+SubQUERY
+========
+
+
+CorrelatedQUery
+==============

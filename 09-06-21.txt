@@ -1,0 +1,109 @@
+Joins in SQL
+============
+A Join clause is used to combine data from two or more table based on a related column between them.
+
+Note: 
+=====
+One join condition is required either in FROM or where clause
+
+Inner Joins 
+
+Outer Joins
+	Left Outer Join
+	Right Outer Join
+	Full Outer Join
+Equi Join
+Self Join
+Cross Join (Cartesian Products)
+
+Orderby
+======
+
+
+
+Group Functions 
+================
+Sum
+count
+AVG
+MAX
+MIN
+STDDEV
+Variance
+
+groupby 
+=======
+
+
+
+
+having
+======
+
+
+dual in oracle sql is a temp table with one row and one column;
+
+
+alter table employee add constraint fk_deptid did number ;
+
+
+subqueries
+===========
+a query inside the another query
+
+FROM
+SELECT
+WHERE
+
+EXISTS
+
+ANY
+
+ALL
+
+
+you can use subquery in
+
+select
+delete
+insert or
+update
+
+
+Types of subqueries
+====================
+single row subquery
+multiple row subquery
+multiple column subquery
+correlated subquery
+nested subquery
+
+
+
+
+
+
+  select std.studentid,std.name,m.total_marks from student std, marks m where std.studentid
+  IN
+ (select studentid,min(total_marks) from marks group by studentid having min(total_marks) = 80)
+
+
+insert into jobs values ('AD_ASST','Admini Assistant',30000,60000)
+insert into jobs values ('FI_ACCOUNT','Accountant',42000,90000)
+insert into jobs values ('AC_MGR','Accounts Manager',82000,160000)
+insert into jobs values ('AD_VP','Admin Vice President',150000,300000)
+
+ update employee set job_id = 'AC_MGR',salary = 150000,did=2 where eid = 125;
+
+
+
+
+
+
+
+
+
+
+
+
+
